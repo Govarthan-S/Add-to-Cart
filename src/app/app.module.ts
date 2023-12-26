@@ -9,6 +9,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { FilterPipe } from './shared/filter.pipe'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './component/auth/login/login.component';
+import { RegisterComponent } from './component/auth/register/register.component';
+import { AuthService } from './service/auth.service';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     ProductsComponent,
     FilterPipe,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,23 +1,35 @@
 .flipcart{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
+    color: #fff;
 }
 i{
     font-size: 50px;
+    color: #fff;
 }
 .form-control{
-    width: 600px;
+    width: 90%;
     margin-left: 20px;
-    margin-top: 10px;
 }
 .search-icon{
     position: absolute;
-    color: #0d6efd;
-    right: 50.5%;
+    color: dodgerblue;
+    right: 10%;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: -28px;
 }
-.fa-sharp{
-    font-size: 30px;
-    color: black;
+.login-container{
+    float:left;
+    margin-left: 20px;
+}
+button.login{
+    color: #2874f0;
+    font-weight: 500;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 32px;
+    padding: 2px 40px 5px 40px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
 }
